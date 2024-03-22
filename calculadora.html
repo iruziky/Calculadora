@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="calculadora.css">
+</head>
+<body>
+	<div class="botoes">
+		<div id="resultados">
+		<p id="visor"></p>
+		</div>
+		<button onclick="insert('+')" class="operacoes">+</button>
+		<button onclick="insert('-')" class="operacoes">-</button>
+		<button onclick="insert('*')" class="operacoes">x</button>
+		<button onclick="insert('/')" class="operacoes">/</button>
+		<button onclick="calcular()" id="igualdade">=</button>
+		<button onclick="insert('1')">1</button>
+		<button onclick="insert('2')">2</button>
+		<button onclick="insert('3')">3</button>
+		<button onclick="insert('4')">4</button>
+		<button onclick="insert('5')">5</button>
+		<button onclick="insert('6')">6</button>
+		<button onclick="insert('7')">7</button>
+		<button onclick="insert('8')">8</button>
+		<button onclick="insert('9')">9</button>
+		<button onclick="insert('.')">.</button>
+		<button onclick="insert('0')">0</button>
+		<button onclick="clean()">C</button>
+		
+	</div>
+</body>
+<script>
+	function insert(num) {
+		var numero = document.getElementById('visor').innerHTML;
+		document.getElementById('visor').innerHTML = numero + num;
+	}
+	function clean() {
+		document.getElementById('visor').innerHTML = "";
+	}
+	function calcular() {
+		var resultado = document.getElementById('visor').innerHTML;
+		if(resultado){
+		document.getElementById('visor').innerHTML = eval(resultado);
+		}
+		else{
+			document.getElementById('visor').innerHTML = "Nada...";
+		}
+	}
+</script>
+</html>

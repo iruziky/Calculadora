@@ -1,0 +1,42 @@
+body{
+	background-color: #9bc9d5;
+}
+.botoes {
+	background-color: blue;
+	width: 25%;
+	height: 350px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 0;
+	grid-row-gap: 0;
+}
+#resultados{
+	width: 100%;
+	height: 100%;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 5;
+	background-color: #252525;
+}
+#visor{
+	position: absolute;
+	color: white;
+}
+#igualdade{
+	width: 100%;
+	height: 100%;
+	grid-row-start: 4;
+	grid-row-end: 8;
+	grid-column-start: 4;
+	grid-column-end: 5;
+	background-color: #f78866;
+}
+.operacoes{
+	background-color: #e7e7e7;
+}
+button{
+	background-color: #ffffff;
+	border-width: 1px;
+	border-color: #c8cacb;
+}
