@@ -1,6 +1,5 @@
-# Calculator
-Projeto básico usando html, css e javascript para fazer uma calculadora
+# Calculadora
 
-# Alteração a serem feitas
-1 - Impedir a inserção de operadores consecutivos (Ex: 1+++5)
-2 - Separar o js do html
+Projeto para realizar as 4 operações matemáticas básicas
+
+Este foi um dos meus primeiros contatos com javascript, durante o ensino médio
