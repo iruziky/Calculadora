@@ -1,5 +1,5 @@
 function insert(num) {
-    const lista_operadores = ['+', '-', '*', '/']
+    const lista_operadores = ['+', '-', '*', '/', '.']
     var numero = document.getElementById('visor').innerHTML;
 
     if (!(lista_operadores.includes(numero.slice(-1)) && lista_operadores.includes(num))) {
