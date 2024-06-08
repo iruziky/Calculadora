@@ -1,6 +1,10 @@
 function insert(num) {
+    const lista_operadores = ['+', '-', '*', '/']
     var numero = document.getElementById('visor').innerHTML;
-    document.getElementById('visor').innerHTML = numero + num;
+
+    if (!(lista_operadores.includes(numero.slice(-1)) && lista_operadores.includes(num))) {
+        document.getElementById('visor').innerHTML = numero + num;
+    }
 }
 
 function clean() {
